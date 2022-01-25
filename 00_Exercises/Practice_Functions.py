@@ -85,8 +85,8 @@ def id_to_password(callback):
     total_id_value = 0
     for character_value in callback:
         total_id_value += int(character_value)
-    print(f"We subtract {total_id_value} from {callback}")
-    return int(callback) - total_id_value
+    print(f"We subtract {total_id_value} from {callback}\n")
+    return f"Your generated ID is {int(callback) - total_id_value}"
 
 
 print(id_to_password(name_to_id("tudor")))
@@ -99,11 +99,24 @@ print("\nQ3a\n")
 
 
 
+
 print("\nQ3b\n")
 # Q3b: Now add some functionality to the function which does not error if the user inputs something other than a digit
 
 # A3b:
 
+
+def is_prime(num: int):
+    try:
+        for n in range(2, int(int(num) ** 1 / 2) + 1):
+            if int(num) % n == 0:
+                return False
+        return True
+    except ValueError:
+        return "Please input a number"
+
+
+print(is_prime("121"))
 
 
 # -------------------------------------------------------------------------------------- #
