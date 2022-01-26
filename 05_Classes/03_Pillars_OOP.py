@@ -3,3 +3,7 @@
 # Abstraction
 
 # Encapsulation
+
+# Inheritance
+
+# Polymorphism

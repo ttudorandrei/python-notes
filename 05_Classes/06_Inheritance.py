@@ -1,4 +1,4 @@
-# Inheritance
+# Inheritance and Polymorphism
 
 
 class Mammal:
@@ -9,6 +9,15 @@ class Mammal:
     def reproduce(self):
         print("Giving birth to live young")
 
+
+class Platypus(Mammal):
+    def __init__(self, name):
+        super().__init__(name)
+        self.poisonous_barbs = True
+        # self.warm_blood = False
+
+    def reproduce(self):
+        print("laying eggs")
 
 """
 To Inherit, pass in the parent class as a param when creating the child class
@@ -38,15 +47,25 @@ class Pony(Horse):
         super().reproduce()
 
 
-m = Mammal("Charlie")
-h = Horse("Horsey", "name of jockey")
-print(h.warm_blood)
-print(h.reproduce())
-print(h.name)
-print(h.jockey)
-print("---------------------------")
-p = Pony("My little Pony")
-print(p.legs)
-p.pregnancy()
-p.give_birth()
+"""
+If there is a method that is being overwritten on a child class, a second child class would only have access to the
+overwritten method
+"""
+
+# perry = Platypus("perry")
+# print(perry.poisonous_barbs)
+# print(perry.reproduce())
+
+
+# m = Mammal("Charlie")
+# h = Horse("Horsey", "name of jockey")
+# print(h.warm_blood)
+# print(h.reproduce())
+# print(h.name)
+# print(h.jockey)
+# print("---------------------------")
+# p = Pony("My little Pony")
+# print(p.legs)
+# p.pregnancy()
+# p.give_birth()
 
