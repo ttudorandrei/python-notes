@@ -21,6 +21,9 @@ class Country:
         print(f"In {self.country_name} the spoken language is {self.language}")
 
 
+uk = Country("United Kingdom", "Europe", "Temperate", "English")
+print(uk.continent)
+
 print("\nQ1b\n")
 
 
@@ -36,7 +39,9 @@ class City(Country):
         print(f"This is {self.city_name} city")
 
 
-london = City("United Kingdom", "cont", "clim", "lang", "london")
+london = City("United Kingdom", "Europe", "Temperate", "English", "London")
+
+print(london.continent)
 # -------------------------------------------------------------------------------------- #
 
 print("\nQ2a\n")
