@@ -2,6 +2,10 @@
 from unit_testing.simplecalc import SimpleCalc
 import pytest
 
+@pytest.fixture
+def calc():
+    print("Initiated tests")
+
 def test_calc_add():
     calc = SimpleCalc()
     assert calc.add(2, 6) == 8

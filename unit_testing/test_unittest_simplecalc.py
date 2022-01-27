@@ -7,7 +7,15 @@ import unittest
 class CalcTests(unittest.TestCase):
 
     # store the imported simplecalc in the variable called "calc"
-    calc = SimpleCalc()
+    # calc = SimpleCalc()
+
+    def setUp(self):
+        self.calc = SimpleCalc()
+        print("Setting Up")
+
+    def tearDown(self):
+        print("Tearing Down")
+        pass
 
     # we call the function
     def test_add(self):
