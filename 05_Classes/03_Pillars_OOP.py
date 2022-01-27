@@ -14,6 +14,6 @@
 # and also has a few new features
 
 # Polymorphism
-# So Polymorphism means having many forms. In OOP it refers to the functions having the same names but
+# So Polymorphism means having many forms. In OOP it refers to the my_functions having the same names but
 # carrying different functionalities.
 # Different engines in the same car

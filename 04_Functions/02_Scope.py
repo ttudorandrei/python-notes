@@ -1,4 +1,4 @@
-# pass things between functions
+# pass things between my_functions
 
 x = 1
 y = 2

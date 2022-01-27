@@ -1,7 +1,7 @@
 # TODO: look into qwargs
 
 
-# define functions using "def"
+# define my_functions using "def"
 # def woof(number_of_woofs):
 #     for i in range(number_of_woofs):
 #         print("Woof")
@@ -58,6 +58,6 @@
 Name with lowercase and underscores
 better to have longer but explicit names rather than short undescriptive ones
 always return (otherwise it'll return none by default)
-keep functions small. when too big, break it into multiple smaller functions
+keep my_functions small. when too big, break it into multiple smaller my_functions
 """
 
