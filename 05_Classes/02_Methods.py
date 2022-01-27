@@ -5,6 +5,7 @@ class Car:
         # self._current_speed = current_speed
         self.__current_speed = current_speed
         self.max_speed = max_speed
+
     # setter method
     def accelerate(self, speed_increase):
         self.__current_speed += speed_increase
